@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+
+    <title>18CSE301J - RA2011026010141</title>
+    <style>
+        *{
+            padding-left: 20px;
+            padding-right: 10px;
+            padding-top: 5px;
+            background-color: rgb(0, 0, 0);
+
+        }
+        h1{
+            text-align: center;
+            font-weight: 600;
+            color: rgb(255, 0, 0);
+            font-family: 'Montserrat', sans-serif;
+        }
+        h2{
+            text-align: center;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+        h3{
+            text-align: center;
+            font-weight: 600;
+            font-size: 45px;
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(255, 0, 0);
+        }
+        ol{
+            margin-left: 20px;
+        }
+        .dataset{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .dataset img{
+            margin-right: 10px;
+            height: 60vh;
+        }
+        .dataset .text{
+            font-family: 'Courier New', Courier, monospace;
+            color: white; 
+        }
+        .dataset_link .data_refer{
+            text-align: center;
+            font-weight: 600;
+            font-size: 30px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .assignments{
+            margin-top: 5%;
+            text-align: center;
+            font-weight: 600;
+            color: rgb(255, 0, 0);
+            font-size: 45px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .tableau{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .tableau img{
+            width: 30vw;
+            height: auto;
+        }
+        .tableau .tableau_text{
+            font-family: 'Courier New', Courier, monospace;
+            color: white; 
+        }
+        .gephi{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .gephi img{
+            width: 30vw;
+            background-color: white;
+        }
+        .gephi .tableau_text{
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        .python{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .python img{
+            width: 20vw;
+        }
+        .python .tableau_text{
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        ol li{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>18CSE301J INFORMATION VISUALIZATION</h1>
+        <h2>Arjun Dev Singla - RA2011031010074</h2>
+        <h3>ABOUT THE DATASET</h3>
+        <div class = "dataset">
+            <img src="Microsoft_logo.svg.png"></img>
+            <span class = "text">This dataset contains the stock price of Microsoft from April 2015 to April 2021. The dataset has 1,461 rows and 5 columns. The columns are:
+
+                Date: The date of the stock price.
+                Open: The opening price of the stock on that day.
+                High: The highest price that the stock was traded for on that day.
+                Low: The lowest price that the stock was traded for on that day.
+                Close: The closing price of the stock on that day.
+                The dataset is in CSV format and can be opened in a spreadsheet program or a data analysis program. The dataset can be used to track the performance of Microsoft stock over time, to compare the performance of Microsoft stock to other stocks, or to build a model to predict the future price of Microsoft stock.
+                <br></br>
+                The opening price is the price at which a stock is first traded on a given day.
+                The closing price is the price at which a stock is last traded on a given day.
+                The highest price is the highest price that a stock is traded for on a given day.
+                The lowest price is the lowest price that a stock is traded for on a given day.
+            
+                <br></br>
+                As you can see, the stock price of Microsoft has fluctuated significantly over the past seven years. The highest price was reached in April 2021, while the lowest price was reached in April 2015.
+                <br></br>
+                There are a number of factors that can affect the stock price of a company, including the company's financial performance, economic conditions, and investor sentiment. In the case of Microsoft, the company's strong financial performance and positive investor sentiment have been driving the stock price higher in recent years.
+                <br></br>
+                It is important to note that past performance is not a guarantee of future results. The stock price of Microsoft could go up or down in the future, depending on a variety of factors.
+            </span>
+        </div>
+        <div class="datset_link">
+            <br></br>
+            <a class="data_refer" href="Microsoft_Stock.csv">YOU CAN FIND THE LINK OF THE DATASET HERE</a>
+        </div>
+        <div class = "assignments">ASSIGNMENTS</div>
+        <ol>
+            <li onclick="goToTableau()">
+                <h1>Tableau</h1>
+                <div class = "tableau">
+                    <span class = "tableau_text">
+                        Tableau is a powerful data visualization tool that allows users to easily analyze and share data in a meaningful way. It enables the creation of interactive dashboards and reports, and provides a wide range of visualization options such as charts, graphs, and maps. Tableau makes it easy to explore data and gain insights that can drive business decisions and help solve complex problems.
+                    </span>
+                    <img src="tableau-LOGO-new02.5c999da7245fd3cb2ad15cde4bf90d0432b626ef (1).png" alt="Tableau"></img>
+                </div>
+            </li>
+            <li onclick="goToGephi()">
+                <h1>Gephi</h1>
+                <div class = "gephi">
+                    <span class = "tableau_text">
+                        Gephi is an open-source software tool designed for network analysis and visualization. It is built using Java on the NetBeans platform, and provides a range of features for analyzing and visualizing complex networks. With Gephi, users can explore and understand networks through interactive visualizations, and can apply a range of algorithms and metrics to gain insights into the structure and behavior of networks. Its open-source nature also enables customization and extensibility by developers  
+                    </span>
+                    <img src="Gephi-logo (1).png" alt="Gephi"></img>
+                </div>
+            </li>
+            <li onclick="goToPython()">
+                <h1>Matplotlib and Seaborn</h1>
+                <div class = "python">
+                    <span class = "tableau_text">
+                        Python provides powerful tools for data visualization, including the popular libraries Matplotlib and Seaborn. Matplotlib is a low-level library that allows for the creation of custom visualizations, while Seaborn provides a high-level interface for creating more sophisticated plots. Together, they allow for the creation of a wide range of visualizations such as line charts, scatter plots, and heat maps, making Python an ideal language for data exploration and analysis.
+                    </span>
+                    <img src="python_photo (1).png" alt="Python"></img>
+                </div>
+            </li>
+            <li onclick="goToD3()">
+                <h1>D3.js</h1>
+                <div class = "tableau">
+                    <span class = "tableau_text">
+                        D3 (Data-Driven Documents) is a JavaScript library for data visualization that provides a range of tools for creating dynamic, interactive visualizations for the web. D3 enables the creation of a wide range of visualizations, including line charts, scatter plots, and heat maps, and provides a range of customization options for creating bespoke designs. Its emphasis on data-driven design makes it an essential tool for creating data visualizations that communicate insights effectively.
+                    </span>
+                    <img src="D" alt="Tableau"></img>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        function goToTableau() {
+            window.location.href = "assignment1.html";
+        }
+
+        function goToGephi() {
+            window.location.href = "assignment2.html";
+        }
+
+        function goToPython() {
+            window.location.href = "assignment3.html";
+        }
+
+        function goToD3() {
+            window.location.href = "assignment4.html";
+        }
+
+    </script>
+</body>
+</html>
